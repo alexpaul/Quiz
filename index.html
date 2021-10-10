@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Studies</title>
+    <link rel="stylesheet" href="app.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="container">
+      <h1>Social Studies</h1>
+      <form action="/post/answer">
+        <p id="question">What is the space between one place and another?</p>
+        <div id="answerContainer">
+            <label id="inputLabel" for="answer">Enter your answer</label>
+            <input id="answerInput" type="text" name="answer" />
+        </div>
+        <button id="submit" type="button">Submit</button>
+        <button id="next" type="button">Next</button>
+      </form>
+      <h2 id="message"></h2>
+      <label id="progressLabel" for="progress">Quiz progress:</label>
+      <progress id="progress" value="0" max="0"></progress>
+    </div>
+    <button type="button" id="showAnswer">Show Answer</button>
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
