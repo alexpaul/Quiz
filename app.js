@@ -113,6 +113,7 @@ sumbit.addEventListener("click", () => {
 form.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     checkAnswer();
+    next.disabled = false
   }
 });
 
