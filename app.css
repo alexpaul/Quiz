@@ -34,15 +34,20 @@ button {
     display: block;
 }
 
-#study {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-}
-
-#showAnswer {
+#helpContainer {
     position: absolute;
     top: 8px; 
     right: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#showAnswer {
+    margin-right: 8px;
+}
+
+#study {
+    background-color: #f28482;
 }
 

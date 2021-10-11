@@ -123,3 +123,11 @@ showAnswer.addEventListener("click", () => {
   }
   isShowingAnswer = !isShowingAnswer;
 });
+
+study.addEventListener('click', (event) => {
+  const isConfirmed = confirm('This will erase your progress, are you sure you want to end your Quiz?')
+  if(isConfirmed) {
+    // navigate to study page
+    window.location.href = 'study.html';
+  } 
+})
