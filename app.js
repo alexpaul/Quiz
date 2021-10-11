@@ -58,6 +58,8 @@ const fetchQuestion = () => {
   message.innerText = "";
   showAnswer.innerText = "Show Answer";
   isShowingAnswer = false;
+
+  next.disabled = true
 };
 
 const checkAnswer = () => {
@@ -105,6 +107,7 @@ next.addEventListener("click", () => {
 // action: answer submitted
 sumbit.addEventListener("click", () => {
   checkAnswer();
+  next.disabled = false
 });
 
 form.addEventListener("keydown", (event) => {
